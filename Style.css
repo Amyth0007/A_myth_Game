@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Balsamiq+Sans:wght@700&family=Caveat:wght@700&family=Varela+Round&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;;
+}
+.body{
+    background: url(imges/bg4.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Scorebox{
+    position: absolute;
+    font-size: 39px;
+    top: 9px;
+    right: 200px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+}
+#Highscore{
+    position: absolute;
+    font-size: 39px;
+    top: 49px;
+    right: 126px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+}
+#board{
+    width: 90vmin;
+    height: 92vmin;
+    background: linear-gradient(rgba(64, 177, 197, 0.979), rgb(0, 0, 0));
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+    border-radius: 8px;
+}
+.head{
+    background:linear-gradient( rgb(231, 166, 80), red);
+    border-radius: 8px;
+   /* background: url("amit.jpg");   */
+   transform: scale(1.1);  
+
+}
+.snake{
+    background-color: rgb(57, 2, 75);
+    border: .25vmin solid rgb(61, 54, 54);
+    border-radius: 12px;
+}
+.food{
+    border-radius: 10px;
+    border: .25vmin solid yellow;
+    background-color: crimson;
+}
